@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>CAR SPOT</title>
+        <script src="js/store-data.js"></script>
+        <script src="js/index.js"></script>
+        <link rel="stylesheet" href="styles/style.css">
+        <script src="https://kit.fontawesome.com/c939d0e917.js"></script>
+    </head>
+    <body>
+        <div class="logo">
+           <img src="img/logo.png">
+        </div>
+
+            <div class="signature">
+               <span>Created by Kacper HERNACKI &reg</span>
+               <span>2020 copyrights reserved</span>
+            </div>
+
+        <div class="search-container">
+            <div class="search">
+                <input id="zip-code-input" type="text" placeholder="Wpisz kod pocztowy"/>
+                    <i class="fas fa-search" onclick="searchStores()"></i>
+            </div>
+       </div>
+
+       <div class="stores-list-container">
+        <div class="stores-list">
+             <div class="store-container">
+                 <div class="store-info-container">
+                   <div class="store-address">
+                         <span>Plac Konstytucji</span>
+                         <span>Warszawa, 01-476</span>
+                     </div>
+                     <div class="store-phone-number">345-289-5434</div>
+                 </div>
+                 <div class="store-number-container">
+                     <div class="store-number">
+                         1
+                     </div>
+                 </div>
+             </div>
+        </div>
+    </div>
+
+        
+        <div id="map"></div>
+        <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key="YOUR-API-KEY"&callback=initMap">
+        </script>
+    </body>
+</html>
